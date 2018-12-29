@@ -44,6 +44,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/third', (req, res) => {
+  res.render('third.hbs', {
+    title: 'The 3rd page'
+  })
+});
+
 app.listen(port, () => {
   log(`Server2 is up on port ${port}`);
 });
